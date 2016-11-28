@@ -76,21 +76,14 @@ else {}
 if($_SESSION["loggedin"]){ // početak ifa za otvorenu i dozvoljenu sesiju #################################################
   
 
-$pdo = new PDO('mysql:host=mysql.hostinger.hr;dbname=u408050119_user', 'u408050119_user', 'useruser123');
+$pdo = new PDO('mysql:host=mysql.hostinger.hr;dbname=+++', '++++', '++++');
 
 //za upis zapisa u BLOG
 $upis_blog = new Content($pdo);
 $upis_blog->setInsertTable('test_table');
 $upis_blog->printInputForm();
 
-//dohvacanje POSTanig sadržaja
-if(isset($_POST[$upis_blog->insertTable]) && ($_POST['insTable'] == $upis_blog->insertTable)){
-$vrijednostiInputTablice  = $_POST[$upis_blog->insertTable];
-//odvajanje zarezom i upis u tablicu
-$odvojene_zarezom = implode("', '", $vrijednostiInputTablice);
-$odvojene_zarezom="'" . $odvojene_zarezom . "'";
-$upis_blog->insertIntoTable($odvojene_zarezom);
-} // kraj ifa za dohvacanje POST-a
+$upis_blog->insertPOSTED($_POST[$upis_blog->insertTable]);
 
 
 

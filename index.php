@@ -2,7 +2,7 @@
 require_once('/home/u408050119/public_html/config.php');
 header('Content-Type:text/html; charset=UTF-8');
 
-$pdo = new PDO('mysql:host=mysql.hostinger.hr;dbname=u408050119_user', 'u408050119_user', 'useruser123');
+$pdo = new PDO('mysql:host=mysql.hostinger.hr;dbname=+++', '++', '+++');
 
 ?>
 

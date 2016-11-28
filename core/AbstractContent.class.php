@@ -16,14 +16,6 @@ public function postaviDb($pdoSet=null){ //constructor in wihch is PDO defined
     }  
   }
 
-  abstract protected function create();
-
-  abstract protected function read();
-
-  abstract protected function update();
-
-  abstract protected function delete();
-
 
 
 }
