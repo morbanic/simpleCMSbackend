@@ -1,0 +1,5 @@
+IMPORTANT NOTES!!
+
+1)define config.php file -> in config.php are definitions of used constants, and spl_autoload function.
+
+
