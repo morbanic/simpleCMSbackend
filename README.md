@@ -6,10 +6,9 @@ Simple Content Management System backend written in PHP. Use it to create simple
 
 clone the project in your preferd directory:
 
-`
+```
 git clone https://github.com/morbanic/simpleCMSbackend.git
-
-`
+```
 
 create database, remember host, username and password.
 Create tables (entities), remember their names.
