@@ -16,7 +16,7 @@ Create tables (entities), remember their names.
 
 on begining of .php file you need to paste this code
 ```
-require_once('/home/uname/public_html/config.php');
+require_once('/home/__uname__/public_html/config.php');
 header('Content-Type:text/html; charset=UTF-8');
 $pdo = new PDO('mysql:host=host;dbname=db_name’, ‘user’, ‘password’);
 ```
