@@ -4,19 +4,19 @@ Simple Content Management System backend written in PHP. Use it to create simple
 
 # Usage
 
-clone the project in your preferd directory:
+Clone the project in your preferd directory:
 
 ```
 git clone https://github.com/morbanic/simpleCMSbackend.git
 ```
 
-create database, remember host, username and password.
-Create tables (entities), remember their names.
+Create database, remember host, username and password.</ br>
+Create tables (entities), remember their names.</ br></ br>
 
 
-on begining of .php file you need to paste this code
+On begining of _.php_ file you need to paste this code
 ```
-require_once('/home/__uname__/public_html/config.php');
+require_once('/home/uname/public_html/config.php');
 header('Content-Type:text/html; charset=UTF-8');
 $pdo = new PDO('mysql:host=host;dbname=db_name’, ‘user’, ‘password’);
 ```
