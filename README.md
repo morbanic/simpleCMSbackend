@@ -42,7 +42,7 @@ $entity->printInputForm();
 
 Where _table_name_ is table you want to work with.
 
-Used method of form is POST. To get Posted data use following code:
+Used method of form is POST. To get Posted data and save it in database use following code:
 ```
 if(isset($_POST[$entity->insertTable]) && ($_POST['insTable'] == $entity->insertTable)){
 $valuesInputTable  = $_POST[$entity->insertTable];
@@ -74,7 +74,7 @@ Used functions in example:
 ```
 public function setStatement($tableName, $fields, $additional=“”) 
 ```
-  * shorter version of long  SQL query, for your own SQL query use setStatementByQuery($query). 
+  * shorter version of long  SQL query, for your own SQL query use `setStatementByQuery($query)`. 
 ```
 public function returnInForm($expression)
 ```
