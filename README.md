@@ -33,7 +33,7 @@ Connection is created using PHP [PDO](http://php.net/manual/en/book.pdo.php)
 
 
 #To:
-##Print input form of table for entity. (usually used in admin/index.php to print form to insert new data)
+##Print input form of entity. (INSERT) (usually used in admin/index.php to print form to insert new data)
 ```
 $entity = new Text($pdo);
 $entity->setInsertTable(‘table_name’);
