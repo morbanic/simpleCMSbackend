@@ -2,7 +2,7 @@
 Simple Content Management System backend written in PHP. Use it to create simplest webpages that need basic interaction with database.
 
 
-# Usage
+# Usage #
 
 Clone the project in your preferd directory:
 
@@ -10,8 +10,9 @@ Clone the project in your preferd directory:
 git clone https://github.com/morbanic/simpleCMSbackend.git
 ```
 
-Create database, remember host, username and password.</ br>
-Create tables (entities), remember their names.</ br></ br>
+Create database, remember host, username and password.
+
+Create tables (entities), remember their names.
 
 
 On begining of _.php_ file you need to paste this code
