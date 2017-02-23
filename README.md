@@ -45,7 +45,7 @@ Where _table_name_ is table you want to work with.
 Used method of form is POST. To get Posted data use following code:
 ```
 if(isset($_POST[$entity->insertTable]) && ($_POST['insTable'] == $entity->insertTable)){
-$valuesInputTable  = $_POST[$uentity->insertTable];
+$valuesInputTable  = $_POST[$entity->insertTable];
 //split the commas and insert into table
 $commaseperated = implode("', '", $ValuesInputTable);
 $commaseperated="'" . $commaseperated . "'";
