@@ -15,23 +15,25 @@ Create database, remember host, username and password.
 Create tables (entities), remember their names.
 
 
-On begining of _.php_ file you need to paste this code
+On begining of _.php_ file you need to insert this code:
 ```
-require_once('/home/uname/public_html/config.php');
+require_once('/home/UNAME/public_html/config.php');
 header('Content-Type:text/html; charset=UTF-8');
-$pdo = new PDO('mysql:host=host;dbname=db_name’, ‘user’, ‘password’);
+$pdo = new PDO('mysql:host=HOST;dbname=DB_NAME’, ‘USER’, ‘PASSWORD’);
 ```
 
 Where :
-* uname is your website name, usually username you get from your host provider
-* host is host of database, usually “localhost”
-* db_name is your database name
-* user is your database username
-* password is your database user password
+* UNAME is your website name, usually username you get from your host provider
+* HOST is host of database, usually “localhost”
+* DB_NAME is your database name
+* USER is your database username
+* PASSWORD is your database user password
+
+Connection is created using PHP [PDO](http://php.net/manual/en/book.pdo.php)
 
 
-To:
-Print input form of table for entity. (usually used in admin/index.php to print form to insert new data)
+#To:
+##Print input form of table for entity. (usually used in admin/index.php to print form to insert new data)
 ```
 $entity = new Text($pdo);
 $entity->setInsertTable(‘table_name’);
@@ -52,7 +54,7 @@ $entity->insertIntoTable($commaseperated);
 ```
 
 
-Print data from table (SELECT)
+##Print data from table (SELECT)
 Example using Blog entity with atributes {title , description , date}
 ```
 $entity = new Text($pdo);
@@ -78,6 +80,7 @@ public function returnInForm($expression)
 ```
 
   * you can print data in selected SQL statement in format you want. 
+  
 Here is how, and simple:
 * each selsected data row is printed in in defined html format
 * to get atributes value you write the atribute name in [ ] brackets.
