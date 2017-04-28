@@ -32,8 +32,8 @@ Where :
 Connection is created using PHP [PDO](http://php.net/manual/en/book.pdo.php)
 
 
-#To:
-##Print input form of entity. (INSERT) (usually used in admin/index.php to print form to insert new data)
+# To:
+## Print input form of entity. (INSERT) (usually used in admin/index.php to print form to insert new data)
 ```
 $entity = new Content($pdo);
 $entity->setInsertTable(‘table_name’);
@@ -54,7 +54,7 @@ $entity->insertIntoTable($commaseperated);
 ```
 
 
-##Print data from table (SELECT)
+## Print data from table (SELECT)
 Example using Blog entity with atributes {title , description , date}
 ```
 $entity = new Content($pdo);
